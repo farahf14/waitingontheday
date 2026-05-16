@@ -7,14 +7,14 @@ body {
 
 /* main fonts */
 @font-face {
-  font-family: KetchupBold; /* set name */
+  font-family: 'KetchupBold'; /* set name */
   src: url(/fonts/KetchupKrExtraBold.otf); /* url of the font */
 }
 
 
 /* main header fonts */
 h1 {
-    font-family: KetchupBold;
+    font-family: 'KetchupBold', sans-serif;
     text-transform: uppercase;
     color: #F7F7F7;
     font-size: 51px;
