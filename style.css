@@ -7,29 +7,29 @@ body {
 
 /* main fonts */
 @font-face {
-  font-family: 'KetchupBold'; /* set name */
+  font-family: KetchupBold; /* set name */
   src: url(/fonts/KetchupKrExtraBold.otf); /* url of the font */
 }
 
 
 /* main header fonts */
 h1 {
-    font-family: 'KetchupBold', sans-serif;
+    font-family: KetchupBold;
     text-transform: uppercase;
     color: #F7F7F7;
     font-size: 51px;
     text-align: center;
     display: block;
     margin-bottom: -20px;
-    z-index: 1;
+    z-index: 1; /*helps to ensure the text stays above images*/
 }
 #sun {
-    display: inline-block;
+    display: inline-block; /*enables the rotation to work*/
     -webkit-text-stroke: 5px  #101932;
     text-shadow: -4px 6px  #101932;
     transform: rotate(-8deg);
     padding-right: 1%;
-    z-index: inherit;
+    z-index: inherit; /*helps to ensure the text stays above images*/
 }
 .fix-stroke {
    paint-order: stroke fill;
@@ -39,13 +39,13 @@ h1 {
 .squiggle{
     width: 250px;
     height: 100%;
-    display: block;
-    margin:auto;
+    display: block; /*helps to central align*/
+    margin:auto; /*helps to central align*/
 }
 
 /*stickers*/
 .stickers{
-    width: 100px;
+    width: 70px;
     height: 100%;
     display: block;
     z-index: -1;
@@ -53,5 +53,20 @@ h1 {
 #perfume {
     transform: rotate(-20deg);
     float: left;
-    margin-left: -40px;
+    margin-left: -25px;
+    margin-top: 50px;
+}
+#ring {
+    transform: rotate(20deg);
+    float: right;
+    margin-right: -25px;
+    margin-top: -105px;
+}
+
+/*book*/
+.book {
+    width:90%;
+    height: 100%;
+    display: block; /*helps to central align*/
+    margin: auto; /*helps to central align*/
 }
