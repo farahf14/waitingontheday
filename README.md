@@ -1,2 +1,1 @@
-"# wotdpromo" 
 "# waitingontheday" 
